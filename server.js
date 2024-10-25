@@ -48,3 +48,9 @@ bot.on('text', async (ctx) => {
          ctx.reply('Sorry, I encountered an error. Please try again later.');
     }
 });
+
+const PORT = process.env.PORT 
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
